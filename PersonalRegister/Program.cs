@@ -16,21 +16,21 @@ namespace PersonalRegister
                 Console.WriteLine("Ange namnet och lönen (Namn, Lön)");
                 string info = Console.ReadLine();
                 register.AddInfo(info);
-                goto start
+                goto start;
             }
             else if (input == "SkrivUt" || input == "Skrivut" || input == "skrivut")
             {
                 register.SkrivUt();
-                goto start
+                goto start;
             }
             else if(input == "Stop" || input == "stop")
             {
-                Environment.Exit(0)
+                Environment.Exit(0);
             }
             else
             {
                 Console.WriteLine("Error, felaktigt input");
-                goto start
+                goto start;
             }
 
         }
