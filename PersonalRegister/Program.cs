@@ -7,12 +7,27 @@ namespace PersonalRegister
         static void Main(string[] args)
         {
             Personal register = new Personal();
-            register.AddInfo("Johan", 100);
-            register.AddInfo("Dan", 90);
-            register.AddInfo("Mill", 20);
+            Console.WriteLine("Vill du läga till Namn och Lön (Addinfo), skriva ut registret (SkrivUt) eller stopa programmet (Stop)?");
 
-            register.SkrivUt();
-
+            string input = Console.ReadLine();
+            if (input =="AddInfo" || input == "Addinfo" || input == "addinfo")
+            {
+                Console.WriteLine("Ange namnet och lönen (Namn, Lön)");
+                string info = Console.ReadLine();
+                register.AddInfo(info);
+            }
+            else if (input == "SkrivUt" || input == "Skrivut" || input == "skrivut")
+            {
+                register.SkrivUt();
+            }
+            else if(input == "Stop" || input == "stop")
+            {
+                Environment.Exit(0)
+            }
+            else
+            {
+                Console.WriteLine("Error, felaktigt input");
+            }
 
         }
     }

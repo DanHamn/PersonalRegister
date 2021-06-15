@@ -10,17 +10,17 @@ namespace PersonalRegister
     {
         public Personal()
         {
-            register = new List<Tuple<string, double>>();
+            register = new List<string>();
         }
 
-        public void AddInfo(string namn, double lön)
+        public void AddInfo(string info)
         {
-            register.Add(new Tuple<string,double>(namn, lön));
+            register.Add(info);
         }
         public void SkrivUt()
         {
             int i = 0;
-            foreach (Tuple<string, double> j in register)
+            foreach (string j in register)
             {
                 
                 Console.WriteLine(register[i]);
@@ -28,6 +28,6 @@ namespace PersonalRegister
             }
         }
 
-        public List<Tuple<string,double>> register;
+        public List<string> register;
     }
 }
