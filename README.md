@@ -4,6 +4,7 @@
 Uppgift 1
 Vilka klasser bör ingå i programmet?
     Räcker med en för att samla alla attributer och metoder
+    
 Uppgift 2
 Vilka attribut och metoder bör ingå i dessa klasser?
     attributen bör vara listan över namn och lön
